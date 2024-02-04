@@ -1,0 +1,148 @@
+
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: rgb(170, 67, 230);
+    color: white;
+}
+
+nav{
+    color: black;
+    background-color: #962ddc;
+    height: 70px;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 99;
+    
+}
+
+nav img{
+    border-radius: 50%;
+    height: 60px;
+    margin-left: 5%;
+    box-shadow: 0 0 19px 5px #9e26db;
+}
+
+.nav_text{
+    display: inline;
+    font-size: large;
+    font-size: 25px;
+    font-weight: 100px;
+    color: white;
+    margin-right:31rem;
+}
+
+.nav_text::first-letter {
+    font-size: 35px;
+    font-weight: bold;
+}
+.nav-links li{
+    list-style: none;
+    display: inline-block;
+    padding: 1px;
+}
+
+.nav-links a{
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+    font-size: 16px;
+    font-weight: 100;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-right: 20px;
+}
+
+.nav-links{
+    margin-right: 10%;
+}
+
+.nav-links ul li::after{
+    content: '';
+    background: #603576;
+    width: 0%;
+    height: 2px;
+    display: block;
+    position: relative;
+    transition: 0.5s;
+    margin: auto;
+}
+
+.nav-links ul li:hover::after{
+    width: 70%;
+    box-shadow: 0 0 5px 5px rgba(146, 135, 151, 0.788);
+}
+
+#bars{
+    display: none;
+}
+
+#cross{
+    display: none;
+}
+
+#banner{
+    width: 100%;
+    height: 100vh;
+    margin-top: 70px;
+    position: absolute;
+    z-index: -5;
+}
+
+#filter{
+    width: 100%;
+    margin-top: 70px;
+    position: absolute;
+    height: calc(100vh + 20vh);
+    z-index: -4;
+    background-color: rgba(68, 9, 119, 0.78);
+}
+
+#text{
+    position: absolute;
+    /* background-color: white; */
+    backdrop-filter: blur(20px);
+    margin-top: 200px;
+    color: #dbd3ce;
+    width: 60vw;
+    height: calc(100vh - 300px);
+    margin-left: 20vw;
+    box-shadow: 0 0 39px 5px rgba(255, 255, 255, 0.238);
+}
+
+#text :nth-child(1){
+    margin-top: 60px;
+    font-size: 45px;
+    margin-left: 30px;
+    font-weight: bolder;
+    padding: 3px;
+}
+
+#text :nth-child(2){
+    margin-top: 5px;
+    font-size: 20px;
+    margin-left: 30px;
+    text-decoration: bold;
+    padding: 5px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+
+#text :nth-child(3){
+    color: white;
+    background-color: #9a29c0;
+    border: none;
+    margin-left: 40px;
+    margin-top: 20px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
